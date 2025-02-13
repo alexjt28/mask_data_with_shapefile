@@ -13,5 +13,5 @@ shp_dir = '/home/shp_location'
 shp = gpd.read_file(f'{shp_dir}/shapefile.shp')
 
 # Mask da with shp
-da_mask = shp_mask_1d_latlon(data=da,shp_type='file',shp_file=shp,
+da_mask = shp_mask_1d_latlon(data=da,shp_type='gdf',shp_file=shp,
                              lat_name='lat',lon_name='lon')
